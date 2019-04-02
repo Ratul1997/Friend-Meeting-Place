@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#274631</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="texTcolor">#000</color>
+    <color name="texTSelctedColor">#fff</color>
+    <color name="tabbarColor">#37A658</color>
+</resources>

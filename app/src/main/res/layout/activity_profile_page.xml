@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile_page"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/homescreen">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_margin="30dp">
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/roundedcorner"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="215dp"
+                android:layout_height="58dp"
+                android:text="Name"
+                android:paddingLeft="15dp"
+                android:paddingRight="5dp"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:gravity="center|start"/>
+
+            <ImageButton
+                android:id="@+id/menu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/name"
+                android:background="@drawable/ic_action_menu"
+                tools:ignore="NotSibling" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="43dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/searchbar"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="271dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="Search Here"
+                android:paddingLeft="20dp"
+                android:paddingRight="15dp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="22dp" />
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:src="@drawable/search" />
+        </LinearLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/texTSelctedColor"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/texTSelctedColor"
+            app:tabTextColor="@color/texTcolor" />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</LinearLayout>
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@drawable/homescreen"
+        android:gravity="fill"
+        android:layout_gravity="fill_horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/roundedcorner"
+            android:src="@drawable/ic_action_name" />
+
+
+        <ImageButton
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/roundedcorner"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="213dp"
+            android:layout_height="100dp"
+            android:gravity="center|start"
+            android:paddingLeft="15dp"
+            android:text="Name"
+            android:textColor="@color/texTcolor"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:fontFamily="casual" />
+
+        <ImageButton
+            android:id="@+id/placePick"
+            android:layout_width="47dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:src="@drawable/ic_action_place" />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:id="@+id/recyclerView"
+        ></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/massageText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner1"
+            android:hint="Write a message"
+            android:textColor="@color/texTcolor"
+            android:textColorHint="#CFD8DC"
+            android:textSize="20sp"
+            android:paddingTop="5dp"/>
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:padding="8dp"
+            android:background="@null"
+            android:src="@drawable/ic_action_send" />
+    </LinearLayout>
+</LinearLayout>
